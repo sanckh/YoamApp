@@ -1,0 +1,30 @@
+//
+//  WorkoutDetailView.swift
+//  Yoam
+//
+//  Created by user198524 on 6/20/21.
+//
+
+import SwiftUI
+
+struct WorkoutDetailView: View {
+    
+    var workout: Workout
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(workout.day)
+            Text(workout.descript)
+            
+            List(workout.routine, id: \.self){ exercise in
+                Text(exercise)
+            }
+        }
+    }
+}
+
+struct WorkoutDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        WorkoutDetailView(workout: Workout(day: "Monday", descript: "Chest Day", image: "chestday", routine: ["Warm Up", "Sit Ups", "Cool Down"]))
+    }
+}

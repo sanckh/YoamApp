@@ -15,6 +15,7 @@ struct ContentView: View {
         
         //image objects are stacked above each other
         NavigationView {
+            
             VStack(alignment: .leading) {
                 
                 //main card view
@@ -66,37 +67,39 @@ struct ContentView: View {
                         ForEach(workoutsData){ workout in
                             
                             //day card
-                            ZStack {
-                                
-                                Image(workout.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(height: 220)
-                                
-                                VStack {
+                            NavigationLink(destination: WorkoutDetailView(workout:workout)) {
+                                ZStack {
                                     
-                                    Spacer()
+                                    Image(workout.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(height: 220)
                                     
-                                    Text(workout.day)
-                                        .font(.title)
-                                        .fontWeight(.medium)
-                                        .foregroundColor(.white)
-                                    Text(workout.descript)
-                                        .fontWeight(.regular)
-                                        .foregroundColor(.white)
-                                    
+                                    VStack {
+                                        
+                                        Spacer()
+                                        
+                                        Text(workout.day)
+                                            .font(.title)
+                                            .fontWeight(.medium)
+                                            .foregroundColor(.white)
+                                        Text(workout.descript)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(.white)
+                                        
+                                    }
+                                    .padding()
+                                    .frame(width: 150)
+                                    .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
                                 }
-                                .padding()
-                                .frame(width: 150)
-                                .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
+                                
+                                
+                                
+                                .frame(width: 150, height: 220)
+                                .clipped()
+                                .cornerRadius(20)
+                                .shadow(radius: 8)
                             }
-                            
-                            
-                            
-                            .frame(width: 150, height: 220)
-                            .clipped()
-                            .cornerRadius(20)
-                            .shadow(radius: 8)
                         
                     }
                     
@@ -131,7 +134,9 @@ struct Workout: Identifiable{
 
 //use let when declaring a variable that will not change
 let workouts = [
-    Workout(day: "Monday", descript: "Chest day", image: "chestday", routine: ["Warmup", "Lat Pull Down", "Cool Down"]),
+    Workout(day: "Monday", descript: "Chest day", image: "chestday", routine: ["Warmup", "Bench Press", "Cool Down"]),
     Workout(day: "Tuesday", descript: "Back Day", image: "backday", routine: ["Warmup", "Lat Pull Down", "Cool Down"]),
-    Workout(day: "Wednesday", descript: "Shoulder Day", image: "shoulders", routine: ["Warmup", "Shoulder Press", "Cool Down"])
+    Workout(day: "Wednesday", descript: "Shoulder Day", image: "shoulders", routine: ["Warmup", "Shoulder Press", "Cool Down"]),
+    Workout(day: "Thursday", descript: "Leg Day", image: "legday", routine: ["Warmup", "Squat", "Cool Down"]),
+    Workout(day: "Friday", descript: "Arm Day", image: "arms", routine: ["Warmup", "Curls", "Cool Down"])
     ]
