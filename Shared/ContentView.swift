@@ -2,15 +2,21 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by user198524 on 6/19/21.
+//  Created by Corey Sutton on 6/19/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, worl d!")
-            .padding()
+        VStack {
+            Text("Full Body Workout")
+                .font(.largeTitle)
+                .fontWeight(.medium)
+            Text("For Beginners")
+                .fontWeight(.regular)
+            
+        }
     }
 }
 
