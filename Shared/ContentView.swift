@@ -43,7 +43,7 @@ struct ContentView: View {
                     
                     .padding()
                     .frame(width: 380)
-                    .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
+                    //.background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
                 }
                 
 
@@ -90,7 +90,7 @@ struct ContentView: View {
                                     }
                                     .padding()
                                     .frame(width: 150)
-                                    .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
+                                   // .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 0.6870748299)))
                                 }
                                 
                                 
