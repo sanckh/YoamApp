@@ -21,45 +21,69 @@ struct LogInPage: View {
     
     var body: some View {
         
-        ZStack {
-            VStack{
-                HelloText()
-                UserImage()
-                UsernameTextField(username: $username)
-                PasswordSecureField(password: $password)
-                
-                if authenticationFailed {
-                    Text(" Username or Password incorrect. Please try again")
-                        .offset(y: -10)
-                        .foregroundColor(.red)
-                }
-                
-                Button(action: {
-                    if self.username == storedUsername && self.password == storedPassword {
-                        self.authenticationPassed = true
-                        self.authenticationFailed = false
-                    } else {
-                        self.authenticationFailed = true
-                        self.authenticationPassed = false
+        
+        NavigationView {
+            ZStack {
+                VStack{
+                    HelloText()
+                    UserImage()
+                    UsernameTextField(username: $username)
+                    PasswordSecureField(password: $password)
+                    
+                    if authenticationFailed {
+                        Text(" Username or Password incorrect. Please try again")
+                            .offset(y: -10)
+                            .foregroundColor(.red)
                     }
-                }) {LoginButton()}
-                
-    
+                    
+                    Button(action: {
+                        if self.username == storedUsername && self.password == storedPassword {
+                           self.authenticationPassed = true
+                           self.authenticationFailed = false
+                           
+                        }
+                        else {
+                            self.authenticationFailed = true
+                            self.authenticationPassed = false
+                        }
+                    }) {NavigationLink(destination: ContentView()){
+                        LoginButton()}}
+                        
+                .padding() //add padding to entire VStack
+                if authenticationPassed{
+                    NavigationLink(destination: ContentView()){
+                        LoginButton()
+                            
+                    }
+                   
+                    
+                    Text("Login Successful!")
+                        .font (.headline)
+                        .frame(width: 250, height: 100)
+                        .background(Color.green)
+                        .cornerRadius(20.0)
+                        .animation(Animation.default)
                 }
-            .padding() //add padding to entire VStack
-            if authenticationPassed{
-                Text("Login Successful!")
-                    .font (.headline)
-                    .frame(width: 250, height: 100)
-                    .background(Color.green)
-                    .cornerRadius(20.0)
-                    .animation(Animation.default)
             }
         }
-        }
-        
     }
+}
 
+    //playing around with hiding the "back" button
+//    fileprivate func setupNavigation()  {
+//        navigationBar.title = "Navigation"
+//        navigationController?.hideNavigationItemBackground()
+//    }
+//
+//    func hideNavigationItemBackground() {
+//        self.navigationBar.setBackgroundImage(UIImage(), for  : UIBarMetrics.default)
+//        self.navigationBar.shadowImage = UIImage()
+//        self.navigationBar.isTranslucent = true
+//        self.view.backgroundColor = UIColor.clear
+//    }
+    
+  
+    
 
 struct LogInPage_Previews: PreviewProvider {
     static var previews: some View {
@@ -69,7 +93,7 @@ struct LogInPage_Previews: PreviewProvider {
 
 struct HelloText: View {
     var body: some View {
-        Text("Hello!")
+        Text("YOAM")
             .font(.largeTitle)
             .fontWeight(.medium)
             .padding(.bottom, 20)
@@ -126,4 +150,5 @@ struct PasswordSecureField: View {
             .cornerRadius(5.0)
             .padding(.bottom, 20)
     }
+}
 }
