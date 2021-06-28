@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
 		0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
-		0B9FB0802682E91F007E4823 /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = 0B9FB07F2682E91E007E4823 /* Shared */; };
-		0B9FB0812682E91F007E4823 /* Shared in Resources */ = {isa = PBXBuildFile; fileRef = 0B9FB07F2682E91E007E4823 /* Shared */; };
+		0BA3299826896A430015F5B4 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3299726896A430015F5B4 /* SideMenu.swift */; };
+		0BA3299926896A430015F5B4 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3299726896A430015F5B4 /* SideMenu.swift */; };
 		0BBD601C267ED8DF00AA0848 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD601B267ED8DF00AA0848 /* Tests_iOS.swift */; };
 		0BBD6027267ED8DF00AA0848 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6026267ED8DF00AA0848 /* Tests_macOS.swift */; };
 		0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6000267ED8DF00AA0848 /* YoamApp.swift */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0B634DE72681842C0030E1DD /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
-		0B9FB07F2682E91E007E4823 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shared; sourceTree = "<group>"; };
+		0BA3299726896A430015F5B4 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		0BBD6000267ED8DF00AA0848 /* YoamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoamApp.swift; sourceTree = "<group>"; };
 		0BBD6001267ED8DF00AA0848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BBD6002267ED8DF00AA0848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				0BBD6001267ED8DF00AA0848 /* ContentView.swift */,
 				0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */,
 				0B634DE72681842C0030E1DD /* LogInPage.swift */,
-				0B9FB07F2682E91E007E4823 /* Shared */,
+				0BA3299726896A430015F5B4 /* SideMenu.swift */,
 				0BBD6002267ED8DF00AA0848 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -288,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBD602D267ED8DF00AA0848 /* Assets.xcassets in Resources */,
-				0B9FB0802682E91F007E4823 /* Shared in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBD602E267ED8DF00AA0848 /* Assets.xcassets in Resources */,
-				0B9FB0812682E91F007E4823 /* Shared in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +322,7 @@
 			files = (
 				0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */,
 				0BBD602B267ED8DF00AA0848 /* ContentView.swift in Sources */,
+				0BA3299826896A430015F5B4 /* SideMenu.swift in Sources */,
 				0BBD603E267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */,
 			);
@@ -335,6 +334,7 @@
 			files = (
 				0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */,
 				0BBD602C267ED8DF00AA0848 /* ContentView.swift in Sources */,
+				0BA3299926896A430015F5B4 /* SideMenu.swift in Sources */,
 				0BBD603F267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD602A267ED8DF00AA0848 /* YoamApp.swift in Sources */,
 			);

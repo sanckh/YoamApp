@@ -107,6 +107,7 @@ struct ContentView: View {
                 }
                     .padding()
                     .navigationBarTitle("Home Workouts")
+                    
                 }
                 .offset(x: 0, y: -30)
         }

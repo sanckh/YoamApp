@@ -14,6 +14,7 @@ let storedPassword = "password"
 
 struct LogInPage: View {
     
+    
     @State var username: String = "" //create state variable to bind to text field
     @State var password: String = "" //create state variable to bind to secure field
     @State var authenticationFailed: Bool = false //in event of incorrect details
@@ -23,6 +24,7 @@ struct LogInPage: View {
         
         
         NavigationView {
+            
             ZStack {
                 VStack{
                     HelloText()
@@ -51,11 +53,13 @@ struct LogInPage: View {
                         
                 .padding() //add padding to entire VStack
                 if authenticationPassed{
+                    //self.navigationItem.leftBarButtonItem = nil
+                    //self.navigationItem.hidesBackButton = true
                     NavigationLink(destination: ContentView()){
                         LoginButton()
-                            
+                        
+                        
                     }
-                   
                     
                     Text("Login Successful!")
                         .font (.headline)
@@ -64,9 +68,12 @@ struct LogInPage: View {
                         .cornerRadius(20.0)
                         .animation(Animation.default)
                 }
+                    
             }
         }
     }
+        
+        
 }
 
     //playing around with hiding the "back" button
