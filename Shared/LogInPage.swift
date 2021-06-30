@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 let lightGrey = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
 let storedUsername = "Corey"
@@ -53,8 +54,8 @@ struct LogInPage: View {
                         
                 .padding() //add padding to entire VStack
                 if authenticationPassed{
-                    //self.navigationItem.leftBarButtonItem = nil
-                    //self.navigationItem.hidesBackButton = true
+                    navigationBarHidden(true)
+                    navigationBarBackButtonHidden(true)
                     NavigationLink(destination: ContentView()){
                         LoginButton()
                         
@@ -71,6 +72,7 @@ struct LogInPage: View {
                     
             }
         }
+        
     }
         
         

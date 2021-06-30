@@ -133,6 +133,8 @@ struct Workout: Identifiable{
     var routine: [String] //an array for the content inside the card
 }
 
+
+
 //use let when declaring a variable that will not change
 let workouts = [
     Workout(day: "Monday", descript: "Chest day", image: "chestday", routine: ["Warmup", "Bench Press", "Cool Down"]),

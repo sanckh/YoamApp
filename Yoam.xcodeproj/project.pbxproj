@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
 		0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
-		0BA3299826896A430015F5B4 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3299726896A430015F5B4 /* SideMenu.swift */; };
-		0BA3299926896A430015F5B4 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3299726896A430015F5B4 /* SideMenu.swift */; };
 		0BBD601C267ED8DF00AA0848 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD601B267ED8DF00AA0848 /* Tests_iOS.swift */; };
 		0BBD6027267ED8DF00AA0848 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6026267ED8DF00AA0848 /* Tests_macOS.swift */; };
 		0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6000267ED8DF00AA0848 /* YoamApp.swift */; };
@@ -21,6 +19,12 @@
 		0BBD602E267ED8DF00AA0848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBD6002267ED8DF00AA0848 /* Assets.xcassets */; };
 		0BBD603E267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */; };
 		0BBD603F267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */; };
+		0BFF9CAD268C2AA700465AC0 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CAC268C2AA700465AC0 /* ContainerController.swift */; };
+		0BFF9CAE268C2AA700465AC0 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CAC268C2AA700465AC0 /* ContainerController.swift */; };
+		0BFF9CB0268C2AFB00465AC0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CAF268C2AFB00465AC0 /* HomeController.swift */; };
+		0BFF9CB1268C2AFB00465AC0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CAF268C2AFB00465AC0 /* HomeController.swift */; };
+		0BFF9CB3268C2B0400465AC0 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CB2268C2B0400465AC0 /* MenuController.swift */; };
+		0BFF9CB4268C2B0400465AC0 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF9CB2268C2B0400465AC0 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		0B634DE72681842C0030E1DD /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
-		0BA3299726896A430015F5B4 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		0BBD6000267ED8DF00AA0848 /* YoamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoamApp.swift; sourceTree = "<group>"; };
 		0BBD6001267ED8DF00AA0848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BBD6002267ED8DF00AA0848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		0BBD6026267ED8DF00AA0848 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		0BBD6028267ED8DF00AA0848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = SOURCE_ROOT; };
+		0BFF9CAC268C2AA700465AC0 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		0BFF9CAF268C2AFB00465AC0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		0BFF9CB2268C2B0400465AC0 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +113,11 @@
 		0BBD5FFF267ED8DF00AA0848 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0BFF9CAB268C2A9300465AC0 /* Controller */,
 				0BBD6000267ED8DF00AA0848 /* YoamApp.swift */,
 				0BBD6001267ED8DF00AA0848 /* ContentView.swift */,
 				0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */,
 				0B634DE72681842C0030E1DD /* LogInPage.swift */,
-				0BA3299726896A430015F5B4 /* SideMenu.swift */,
 				0BBD6002267ED8DF00AA0848 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -161,6 +167,16 @@
 				0BBD6028267ED8DF00AA0848 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0BFF9CAB268C2A9300465AC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF9CAC268C2AA700465AC0 /* ContainerController.swift */,
+				0BFF9CAF268C2AFB00465AC0 /* HomeController.swift */,
+				0BFF9CB2268C2B0400465AC0 /* MenuController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */,
+				0BFF9CB3268C2B0400465AC0 /* MenuController.swift in Sources */,
+				0BFF9CAD268C2AA700465AC0 /* ContainerController.swift in Sources */,
+				0BFF9CB0268C2AFB00465AC0 /* HomeController.swift in Sources */,
 				0BBD602B267ED8DF00AA0848 /* ContentView.swift in Sources */,
-				0BA3299826896A430015F5B4 /* SideMenu.swift in Sources */,
 				0BBD603E267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */,
 			);
@@ -333,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */,
+				0BFF9CB4268C2B0400465AC0 /* MenuController.swift in Sources */,
+				0BFF9CAE268C2AA700465AC0 /* ContainerController.swift in Sources */,
+				0BFF9CB1268C2AFB00465AC0 /* HomeController.swift in Sources */,
 				0BBD602C267ED8DF00AA0848 /* ContentView.swift in Sources */,
-				0BA3299926896A430015F5B4 /* SideMenu.swift in Sources */,
 				0BBD603F267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD602A267ED8DF00AA0848 /* YoamApp.swift in Sources */,
 			);
