@@ -10,11 +10,25 @@ import SwiftUI
 struct ContentView: View {
     
     let workoutsData = workouts
+    @State private var isShowing = false
     
     var body: some View {
         
         //image objects are stacked above each other
         NavigationView {
+            
+            ZStack {
+                if isShowing {
+                    SideMenuView()
+                }
+                HomeView()
+                    .offset(x: isShowing ? 300:0, y: 0)
+                    .navigationBarItems(leading: Button(action: {isShowing.toggle()}, label: {
+                        Image(systemName: "list.bullet")
+                            .foregroundColor(.black)
+                    }))
+                    
+            }
             
             VStack(alignment: .leading) {
                 
@@ -23,6 +37,7 @@ struct ContentView: View {
                     Image("IMG_0417")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        
                         
                     
                     
@@ -38,6 +53,7 @@ struct ContentView: View {
                         Text("For Beginners")
                             .fontWeight(.regular)
                             .foregroundColor(.white)
+                           
                         
                     }
                     
@@ -107,11 +123,13 @@ struct ContentView: View {
                 }
                     .padding()
                     .navigationBarTitle("Home Workouts")
+                    .navigationBarTitleDisplayMode(.automatic)
                     
                 }
                 .offset(x: 0, y: -30)
         }
     }
+        .navigationBarBackButtonHidden(true)
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -122,6 +140,16 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+    
+    
+    struct HomeView: View {
+        var body: some View {
+            ZStack {
+                ContentView()
+            }
+            
+        }
+    }
 }
 
 struct Workout: Identifiable{

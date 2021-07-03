@@ -73,26 +73,15 @@ struct LogInPage: View {
             }
         }
         
-    }
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+        
         
         
 }
 
-    //playing around with hiding the "back" button
-//    fileprivate func setupNavigation()  {
-//        navigationBar.title = "Navigation"
-//        navigationController?.hideNavigationItemBackground()
-//    }
-//
-//    func hideNavigationItemBackground() {
-//        self.navigationBar.setBackgroundImage(UIImage(), for  : UIBarMetrics.default)
-//        self.navigationBar.shadowImage = UIImage()
-//        self.navigationBar.isTranslucent = true
-//        self.view.backgroundColor = UIColor.clear
-//    }
-    
-  
-    
+
 
 struct LogInPage_Previews: PreviewProvider {
     static var previews: some View {
@@ -157,7 +146,6 @@ struct PasswordSecureField: View {
             .padding()
             .background(lightGrey)
             .cornerRadius(5.0)
-            .padding(.bottom, 20)
-    }
+                }
 }
 }
