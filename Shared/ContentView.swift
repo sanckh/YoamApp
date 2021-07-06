@@ -17,18 +17,7 @@ struct ContentView: View {
         //image objects are stacked above each other
         NavigationView {
             
-            ZStack {
-                if isShowing {
-                    SideMenuView()
-                }
-                HomeView()
-                    .offset(x: isShowing ? 300:0, y: 0)
-                    .navigationBarItems(leading: Button(action: {isShowing.toggle()}, label: {
-                        Image(systemName: "list.bullet")
-                            .foregroundColor(.black)
-                    }))
-                    
-            }
+           
             
             VStack(alignment: .leading) {
                 
