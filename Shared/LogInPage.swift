@@ -49,14 +49,14 @@ struct LogInPage: View {
                             self.authenticationFailed = true
                             self.authenticationPassed = false
                         }
-                    }) {NavigationLink(destination: ContentView()){
+                    }) {NavigationLink(destination: SideMenu()){
                         LoginButton()}}
                         
                 .padding() //add padding to entire VStack
                 if authenticationPassed{
                     navigationBarHidden(true)
                     navigationBarBackButtonHidden(true)
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: SideMenu()){
                         LoginButton()
                         
                         

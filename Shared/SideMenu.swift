@@ -13,18 +13,29 @@ struct SideMenu: View {
         NavigationView {
             ZStack {
                 if isShowing {
-                    SideMenuView()
+                    SideMenuView(isShowing: $isShowing)
                 }
                 HomeView()
-                    .offset(x: isShowing ? 300:0, y: 0)
-                    .navigationBarItems(leading: Button(action: {isShowing.toggle()}, label: {
+                    .cornerRadius(isShowing ? 20 :10)
+                    .offset(x: isShowing ? 300:0, y: isShowing ? 44 : 0)
+                    .scaleEffect(isShowing ? 0.8 : 1)
+                    .navigationBarItems(leading: Button(action: {
+                        withAnimation(.spring()) {
+                            isShowing.toggle()
+                        }
+                    }, label: {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.black)
                     }))
                     .navigationTitle("Home")
-                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarTitleDisplayMode(.automatic)
+            }
+            .onAppear {
+                isShowing = false
             }
         }
+        .navigationBarBackButtonHidden(true)
+        
     }
 }
 

@@ -8,44 +8,57 @@
 import SwiftUI
 
 struct SideMenuHeaderView: View {
+    @Binding var isShowing: Bool
     var body: some View {
-        VStack(alignment: .leading) {
-            Image("arms")
-                .resizable()
-                .scaledToFill()
-                .clipped()
-                .frame(width: 64, height: 64)
-                .clipShape(Circle())
-                .padding(.bottom, 16)
+        ZStack(alignment : .topTrailing) {
             
-            Text("Corey Sutton")
-                .font(.system(size: 24, weight: .semibold))
+            Button(action: {  withAnimation(.spring()) {
+                isShowing.toggle()
+            } }, label: {
+                Image(systemName: "xmark")
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.white)
+                    .padding()
+            })
             
-            Text("@thecoreysutton")
-                .font(.system(size: 14))
-                .padding(.bottom, 24)
-            
-            HStack(spacing: 12) {
-                HStack(spacing: 4) {
-                    Text("345") .bold()
-                    Text("Following")
+            VStack(alignment: .leading) {
+                Image("arms")
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
+                    .frame(width: 64, height: 64)
+                    .clipShape(Circle())
+                    .padding(.bottom, 16)
+                
+                Text("Corey Sutton")
+                    .font(.system(size: 24, weight: .semibold))
+                
+                Text("@thecoreysutton")
+                    .font(.system(size: 14))
+                    .padding(.bottom, 24)
+                
+                HStack(spacing: 12) {
+                    HStack(spacing: 4) {
+                        Text("345") .bold()
+                        Text("Following")
+                    }
+                    
+                    HStack(spacing:4) {
+                        Text("6,666") .bold()
+                        Text("Followers")
+                    }
+                    Spacer()
+                    
                 }
                 
-                HStack(spacing:4) {
-                    Text("6,666") .bold()
-                    Text("Followers")
-                }
                 Spacer()
-                
-            }
-            
-            Spacer()
-        }.padding()
+            }.padding()
+        }
     }
 }
 
 struct SideMenuHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuHeaderView()
+        SideMenuHeaderView(isShowing: .constant(true))
     }
 }

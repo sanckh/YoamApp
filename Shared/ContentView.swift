@@ -17,7 +17,7 @@ struct ContentView: View {
         //image objects are stacked above each other
         NavigationView {
             
-           
+          
             
             VStack(alignment: .leading) {
                 
@@ -119,6 +119,7 @@ struct ContentView: View {
         }
     }
         .navigationBarBackButtonHidden(true)
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -131,14 +132,7 @@ struct ContentView_Previews: PreviewProvider {
 }
     
     
-    struct HomeView: View {
-        var body: some View {
-            ZStack {
-                ContentView()
-            }
-            
-        }
-    }
+   
 }
 
 struct Workout: Identifiable{

@@ -123,12 +123,12 @@
 				0BBD6001267ED8DF00AA0848 /* ContentView.swift */,
 				0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */,
 				0B634DE72681842C0030E1DD /* LogInPage.swift */,
-				0BBD6002267ED8DF00AA0848 /* Assets.xcassets */,
 				0B8B5F4C268FC915009BE07B /* SideMenu.swift */,
 				0B8B5F5B268FD801009BE07B /* SideMenuView.swift */,
 				0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */,
 				0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */,
 				0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */,
+				0BBD6002267ED8DF00AA0848 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
