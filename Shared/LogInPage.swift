@@ -133,6 +133,7 @@ struct UsernameTextField: View {
             .background(lightGrey)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -146,6 +147,7 @@ struct PasswordSecureField: View {
             .padding()
             .background(lightGrey)
             .cornerRadius(5.0)
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 }
 }
 }

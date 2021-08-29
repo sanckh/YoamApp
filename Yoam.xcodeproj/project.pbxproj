@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B00B04E26DC2CA4000AAE80 /* macrocalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00B04D26DC2CA4000AAE80 /* macrocalculator.swift */; };
+		0B00B04F26DC2CA4000AAE80 /* macrocalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00B04D26DC2CA4000AAE80 /* macrocalculator.swift */; };
 		0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
 		0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B634DE72681842C0030E1DD /* LogInPage.swift */; };
 		0B8B5F4D268FC915009BE07B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F4C268FC915009BE07B /* SideMenu.swift */; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B00B04D26DC2CA4000AAE80 /* macrocalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = macrocalculator.swift; path = "Side Menu/macrocalculator.swift"; sourceTree = "<group>"; };
 		0B634DE72681842C0030E1DD /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
 		0B8B5F4C268FC915009BE07B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		0B8B5F5B268FD801009BE07B /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -119,15 +122,12 @@
 		0BBD5FFF267ED8DF00AA0848 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0BE3C81C26AE2EE500C82A55 /* Side Menu */,
 				0BBD6000267ED8DF00AA0848 /* YoamApp.swift */,
+				0B00B04D26DC2CA4000AAE80 /* macrocalculator.swift */,
 				0BBD6001267ED8DF00AA0848 /* ContentView.swift */,
 				0BBD603D267F01AC00AA0848 /* WorkoutDetailView.swift */,
 				0B634DE72681842C0030E1DD /* LogInPage.swift */,
-				0B8B5F4C268FC915009BE07B /* SideMenu.swift */,
-				0B8B5F5B268FD801009BE07B /* SideMenuView.swift */,
-				0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */,
-				0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */,
-				0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */,
 				0BBD6002267ED8DF00AA0848 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -177,6 +177,18 @@
 				0BBD6028267ED8DF00AA0848 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0BE3C81C26AE2EE500C82A55 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0B8B5F4C268FC915009BE07B /* SideMenu.swift */,
+				0B8B5F5B268FD801009BE07B /* SideMenuView.swift */,
+				0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */,
+				0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */,
+				0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */,
+			);
+			path = "Side Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +354,7 @@
 				0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */,
 				0B8B5F65268FD82A009BE07B /* SideMenuViewModel.swift in Sources */,
 				0BBD602B267ED8DF00AA0848 /* ContentView.swift in Sources */,
+				0B00B04E26DC2CA4000AAE80 /* macrocalculator.swift in Sources */,
 				0B8B5F4D268FC915009BE07B /* SideMenu.swift in Sources */,
 				0BBD603E267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */,
@@ -358,6 +371,7 @@
 				0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */,
 				0B8B5F66268FD82A009BE07B /* SideMenuViewModel.swift in Sources */,
 				0BBD602C267ED8DF00AA0848 /* ContentView.swift in Sources */,
+				0B00B04F26DC2CA4000AAE80 /* macrocalculator.swift in Sources */,
 				0B8B5F4E268FC915009BE07B /* SideMenu.swift in Sources */,
 				0BBD603F267F01AC00AA0848 /* WorkoutDetailView.swift in Sources */,
 				0BBD602A267ED8DF00AA0848 /* YoamApp.swift in Sources */,

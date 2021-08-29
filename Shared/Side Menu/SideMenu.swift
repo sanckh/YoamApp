@@ -27,7 +27,7 @@ struct SideMenu: View {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.black)
                     }))
-                    .navigationTitle("Home")
+                    
                     .navigationBarTitleDisplayMode(.automatic)
             }
             .onAppear {
@@ -35,6 +35,7 @@ struct SideMenu: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
         
     }
 }
