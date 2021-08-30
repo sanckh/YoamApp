@@ -23,8 +23,8 @@ struct WorkoutDetailView: View {
             List(workout.routine, id: \.self){ exercise in
                 Text(exercise)
             }
-            .navigationBarBackButtonHidden(true)
-            .navigationBarHidden(true)
+            
+           
         }
         
     }

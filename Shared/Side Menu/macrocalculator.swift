@@ -36,14 +36,14 @@ struct macrocalculator: View {
                         Text(Sex.male.rawValue).tag(Sex.male)
                         Text(Sex.female.rawValue).tag(Sex.female)
                     }
-                    
+                    .offset(y: -50)
                     Text("Daily Maintenance Calorie Intake: " + String(computed))
-                    Spacer()
+                        .offset(x: 0, y: -60.0/*@END_MENU_TOKEN@*/)
                     Text("Disclaimer: This is a recommendation from a fitness professional, not a prescription. This calculator uses a scientific formula based on exercise three times per week.")
                     
                 }
                 .padding()
-                .offset(y: -80)
+                .offset(y: -40)
                 
             }
             
@@ -68,7 +68,7 @@ struct macrocalculator: View {
                 .background(lightGrey)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                
         }
     }
     
@@ -82,7 +82,7 @@ struct macrocalculator: View {
                 .background(lightGrey)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                
         }
     }
     
@@ -96,7 +96,7 @@ struct macrocalculator: View {
                 .background(lightGrey)
                 .cornerRadius(5.0)
                 .padding(.bottom, 20)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                
         }
     }
     

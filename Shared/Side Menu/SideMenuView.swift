@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SideMenuView: View {
+    
     @Binding var isShowing: Bool
-    @State var logout = false
+
     var body: some View {
         NavigationView {
         ZStack {
@@ -17,11 +18,11 @@ struct SideMenuView: View {
                 .ignoresSafeArea()
             
             VStack {
+                
                 // Header
                 SideMenuHeaderView(isShowing: $isShowing)
                     .frame(height:240)
                     .foregroundColor(.white)
-
                 
                 NavigationLink(
                     destination: SideMenu(),
@@ -31,6 +32,8 @@ struct SideMenuView: View {
                     .padding()
                     .foregroundColor(.white)
                     .offset(x: -175)
+                    
+                   
                 
                 NavigationLink(
                     destination: LogInPage(),
@@ -50,23 +53,18 @@ struct SideMenuView: View {
                     .padding()
                     .foregroundColor(.white)
                     .offset(x: -130)
-                
-                
-               
-                
                 Spacer()
-                
-                // Cell Items
-               
-                
             }
-        } .navigationBarHidden(true)
+        }
+        .navigationBarHidden(true)
+        
+            
     }
 }
 
-struct SideMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        SideMenuView(isShowing: .constant(true))
+    struct SideMenuView_Previews: PreviewProvider {
+        static var previews: some View {
+            SideMenuView(isShowing: .constant(true))
+        }
     }
-}
 }

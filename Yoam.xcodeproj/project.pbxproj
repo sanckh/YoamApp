@@ -17,10 +17,6 @@
 		0B8B5F5D268FD801009BE07B /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F5B268FD801009BE07B /* SideMenuView.swift */; };
 		0B8B5F5F268FD80F009BE07B /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */; };
 		0B8B5F60268FD80F009BE07B /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */; };
-		0B8B5F62268FD81F009BE07B /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */; };
-		0B8B5F63268FD81F009BE07B /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */; };
-		0B8B5F65268FD82A009BE07B /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */; };
-		0B8B5F66268FD82A009BE07B /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */; };
 		0BBD601C267ED8DF00AA0848 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD601B267ED8DF00AA0848 /* Tests_iOS.swift */; };
 		0BBD6027267ED8DF00AA0848 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6026267ED8DF00AA0848 /* Tests_macOS.swift */; };
 		0BBD6029267ED8DF00AA0848 /* YoamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD6000267ED8DF00AA0848 /* YoamApp.swift */; };
@@ -56,8 +52,6 @@
 		0B8B5F4C268FC915009BE07B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		0B8B5F5B268FD801009BE07B /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
-		0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
-		0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		0BBD6000267ED8DF00AA0848 /* YoamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoamApp.swift; sourceTree = "<group>"; };
 		0BBD6001267ED8DF00AA0848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BBD6002267ED8DF00AA0848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,8 +179,6 @@
 				0B8B5F4C268FC915009BE07B /* SideMenu.swift */,
 				0B8B5F5B268FD801009BE07B /* SideMenuView.swift */,
 				0B8B5F5E268FD80F009BE07B /* SideMenuHeaderView.swift */,
-				0B8B5F61268FD81F009BE07B /* SideMenuOptionView.swift */,
-				0B8B5F64268FD82A009BE07B /* SideMenuViewModel.swift */,
 			);
 			path = "Side Menu";
 			sourceTree = "<group>";
@@ -349,10 +341,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8B5F5C268FD801009BE07B /* SideMenuView.swift in Sources */,
-				0B8B5F62268FD81F009BE07B /* SideMenuOptionView.swift in Sources */,
 				0B8B5F5F268FD80F009BE07B /* SideMenuHeaderView.swift in Sources */,
 				0B634DE82681842C0030E1DD /* LogInPage.swift in Sources */,
-				0B8B5F65268FD82A009BE07B /* SideMenuViewModel.swift in Sources */,
 				0BBD602B267ED8DF00AA0848 /* ContentView.swift in Sources */,
 				0B00B04E26DC2CA4000AAE80 /* macrocalculator.swift in Sources */,
 				0B8B5F4D268FC915009BE07B /* SideMenu.swift in Sources */,
@@ -366,10 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8B5F5D268FD801009BE07B /* SideMenuView.swift in Sources */,
-				0B8B5F63268FD81F009BE07B /* SideMenuOptionView.swift in Sources */,
 				0B8B5F60268FD80F009BE07B /* SideMenuHeaderView.swift in Sources */,
 				0B634DE92681842C0030E1DD /* LogInPage.swift in Sources */,
-				0B8B5F66268FD82A009BE07B /* SideMenuViewModel.swift in Sources */,
 				0BBD602C267ED8DF00AA0848 /* ContentView.swift in Sources */,
 				0B00B04F26DC2CA4000AAE80 /* macrocalculator.swift in Sources */,
 				0B8B5F4E268FC915009BE07B /* SideMenu.swift in Sources */,
